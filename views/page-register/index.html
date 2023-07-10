@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Membro</title>
+    <link rel="stylesheet" href="../../public/page-register/style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="grid">
+        <div class="btn-container align-row">
+            <button class="button-27" onclick="window.history.back();"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></button>
+            <button class="button-27" onclick="window.location.href = '/login';"><i class="fa fa-home"></i></button>
+        </div>
+        <div class="navbar align-center">DEV-U</div>
+        <div class="register-container align-center">
+            <div class="align-center" id="wrapper">
+                <form id="register-form"class="align-center">
+                    <h4>Cadastro de novos membros:</h4>
+                    <input type="text" placeholder="Nome" id="name" minlength="3" required>
+                    <input type="email" placeholder="e-mail" id="email" required/>
+                    <input type="password" placeholder="Senha" id="password" minlength="8" required>
+                    <input type="text" placeholder="Voucher de validação" id="voucher" required/>
+                    <p style="color: red; display: none;">Voucher inválido</p>
+                    <button class="button-27" role="button" id="userRegister" type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../public/page-register/main.js"></script>
+</body>
+</html>
