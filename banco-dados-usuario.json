@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "username": "Jaum",
+    "email": "jaum@teste.com.br",
+    "password": "123456"
+  },
+  {
+    "id": 2,
+    "username": "phyllipe_slf",
+    "email": "phyllipe@unifei.edu.br",
+    "password": "$2b$10$/IbYx.QjKy5S7P/v6IudIu6OWyCn.xFQoshZtXK3YPrG5AfJ.Chqu"
+  },
+  {
+    "id": 3,
+    "username": "asd",
+    "email": "phyllipe_slf@yahoo.com.br",
+    "password": "$2b$10$vlvWs7jQ86fJ/bA/DwVIJ.uKzgPqWaKYdm8ekUD7zGyXwpeQSE9UK"
+  },
+  {
+    "id": 4,
+    "username": "phyllipe_slf",
+    "email": "phyllipe_slf@outlook.com",
+    "password": "$2b$10$ZOxvjhvrLcfY7eQ6m5IuwOHosZCUisEFyZVoC6ywt8eISvfWJtmNq"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "dev-u-website-v3-back-v1",
+  "version": "1.0.0",
+  "description": "first attempt to make frontend with backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flávio Augusto Aló Torres (github: flavio055063)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "rate-limiter-flexible": "^2.4.1"
+  }
+}
