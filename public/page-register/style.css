@@ -21,6 +21,29 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+#msg{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    margin: 10%;
+    padding: 2px;
+    background-color: rgb(255, 189, 189);
+    border-radius: 15px;
+    transition: margin-right 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#wrapper{
+    border-radius: 15px;
+    transition: opacity 0.1 ease;
+    background-color: #FFFFFF;
+}
+
 .btn-container{
     grid-row-start: 2;
     grid-column-start: 1;

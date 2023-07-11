@@ -100,15 +100,15 @@ app.post('/register', (req, res)=>{
     console.log(email);
     
     // Verifique se algum campo obrigatório está faltando
-    if (!name || !email || !password || !voucher) {
-        return res.status(400).json({ message: 'Invalid' });
+    if (!name || !email || !password || !voucher || voucher != '123456') {
+        return res.status(400).json({ token: 'Invalid' });
     }
 
-    return res.status(200).json({ token: '123' })
+    
+    return res.status(200).json({ token: '123' });
     // Outras validações e lógica de registro aqui...
 
-    // Redirecionamento para o sucesso após o registro
-    //res.redirect('/register/success');
+    res.redirect('/register/success');
 })
 
 app.get('/main', (req,res) => {
