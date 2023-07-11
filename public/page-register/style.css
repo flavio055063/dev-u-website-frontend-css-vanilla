@@ -147,7 +147,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
     width: 70%;
-    height: 7%;
+    height: 15%;
     padding: 1%;
     margin-top: 4%;
     border-radius: 3px;

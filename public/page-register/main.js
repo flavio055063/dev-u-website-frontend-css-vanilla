@@ -53,7 +53,7 @@ async function userRegister() {
   if(token === 'Invalid'){
     msg.style.display = "flex";
   }else{
-    
+    msg.style.display = "none";
     form.style.display = "none";
     wrapper.style.backgroundColor = "rgb(141, 255, 166)";
     wrapper.innerText = "✔️Registro feito com sucesso! Redirecionando...";
@@ -63,9 +63,10 @@ async function userRegister() {
       console.log(j);
       await timer(20);
     }
-    window.location.href="https://www.google.com/";
+    window.location.href="http://localhost:3000/login";
   }
 
   console.log(token);
 }
+
 

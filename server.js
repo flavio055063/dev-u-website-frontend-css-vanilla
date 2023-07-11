@@ -111,6 +111,13 @@ app.post('/register', (req, res)=>{
     res.redirect('/register/success');
 })
 
-app.get('/main', (req,res) => {
+app.get('/main', (req, res)=>{
+    res.render('page-main/index');
 })
+
+app.get('/main/getData', (req, res)=>{
+    console.log("[ GET ] /main/getData")
+    res.status(200).json({ nick: "Flavin", name: "Flávio Augusto Aló Torres", devUentry: "20/03/2023", itchio: "flavin.do.pneu.com", discord: "flavin do pneu", bio: "In the begginer, there was the designer", area: "1"});
+})
+
 
