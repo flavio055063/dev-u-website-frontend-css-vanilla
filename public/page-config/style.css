@@ -1,0 +1,205 @@
+#background{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    opacity: 0.5;
+}
+
+body {
+    display: flex;
+    background-image: url(../images/background.png);
+    background-color: black;
+    background-repeat: repeat;
+    background-size: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    min-height: 700px;
+}
+
+p {
+    font-size: 1cqi;
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+#grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* colocando 25 linhas */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* colocando 15 colunas */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#profile-frame {
+    grid-row-start: 2;
+    grid-row-end: 15;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    background-color: rgba(36, 36, 36, 0.925);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+#profile-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* colocando 3 linhas */
+    grid-template-rows: 1fr 1fr 0.35fr;
+}
+
+#profile-pic-wrap {
+    max-width: 35%;
+    max-height: 35%;
+}
+
+#profile-pic {
+    width: 25%;
+    border-radius: 50%;
+}
+
+#rank-border {
+    position: absolute;
+    width: 15%;
+    transition: filter 2000ms;
+}
+#rank-border:hover .upload-icon {
+    opacity: 1;
+}
+
+
+#nickname {
+    font-size: 100%;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+#area {
+    font-size: 75%;
+    margin: 0px;
+    color: orange;
+}
+
+#bio {
+    background-color: rgb(12, 12, 12);
+    margin: 2% 6%;
+    padding: 1% 5%;
+    border-radius: 4px;
+}
+
+.upload-icon {
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#profile-pic-wrapper:hover .upload-icon {
+    opacity: 1;
+}
+#file-input{
+    position: absolute;
+    display: none;
+}
+#label-upload{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+}
+#profile-pic-wrapper>input {
+    display: none;
+}
+  
+.size-15 {
+    width: 15%;
+}
+
+#btn-config {
+    background-color: transparent;
+    border: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    transition: filter 400ms;
+}
+
+#btn-config:hover, .meeting:hover, #btn-calendar:hover, #btn-statistics:hover {
+    filter: drop-shadow(0 0 2em #eaeaeac9);
+}
+
+#btn-config:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#name,
+#dev-u-entry,
+#itchio,
+#bio,
+#discord {
+    width: 60%;
+    margin: 10px;
+    padding: 5px;
+    height: 10%;
+    border-radius: 10px;
+}
+
+.align-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Media query para dispositivos com largura mínima de 600px (tela de celular) */
+@media (max-width: 600px) {
+    body{
+        min-height: 2050px;
+    }
+    p {
+        font-size: 10px;
+    }
+    #grid {
+        /* colocando 9 colunas */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* colocando 15 linhas */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    #profile-frame {
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+    
+    #rank-border {
+        width: 35%;
+    }
+}

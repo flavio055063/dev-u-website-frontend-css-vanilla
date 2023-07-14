@@ -20,8 +20,18 @@
                 <form id="register-form"class="align-center">
                     <h4>Cadastro de novos membros:</h4>
                     <input type="text" placeholder="Nome" id="name" minlength="3" required>
+                    <input type="text" placeholder="Nickname" id="nick" required/>
                     <input type="email" placeholder="e-mail" id="email" required/>
                     <input type="password" placeholder="Senha" id="password" minlength="8" required>
+                    <label for="dev-u-entry">Data de entrada na Dev-U</label>
+                    <input name="dev-u-entry" type="date" placeholder="Data de entrada na Dev-U" id="dev-u-entry" required/>
+                    <label for="area">De qual área você é?</label>
+                    <select name="area" id="area">
+                        <option value="1">Programação</option>
+                        <option value="2">Audiovisual</option>
+                        <option value="3">Gestão e Marketing</option>
+                        <option value="4">Game Design</option>
+                    </select>
                     <input type="text" placeholder="Voucher de validação" id="voucher" required/>
                     <p style="color: red; display: none;">Voucher inválido</p>
                     <button class="button-27" role="button" id="userRegister" type="submit">Registrar</button>

@@ -93,11 +93,15 @@ app.get('/register', (req, res)=>{
 })
 app.post('/register', (req, res)=>{
     console.log("[ POST ] Register");
-    const {name, email, password, voucher} = req.body;
+    const {name, nick, email, password, passwordConfirmation, areaId, entryDate, voucher} = req.body;
     console.log(name);
-    console.log(password);
-    console.log(voucher);
+    console.log(nick);
     console.log(email);
+    console.log(password);
+    console.log(passwordConfirmation);
+    console.log(areaId);
+    console.log(entryDate);
+    console.log(voucher);
     
     // Verifique se algum campo obrigatório está faltando
     if (!name || !email || !password || !voucher || voucher != '123456') {
@@ -117,7 +121,7 @@ app.get('/main', (req, res)=>{
 
 app.get('/main/getData', (req, res)=>{
     console.log("[ GET ] /main/getData")
-    res.status(200).json({ nick: "Flavin", name: "Flávio Augusto Aló Torres", devUentry: "20/03/2023", itchio: "flavin.do.pneu.com", discord: "flavin do pneu", bio: "In the begginer, there was the designer", area: "1"});
+    res.status(200).json({ nick: "Flavin", name: "Flávio Augusto Aló Torres", baba: "1234", devUentry: "20/03/2023", itchio: "flavin.do.pneu.com", discord: "flavin do pneu", bio: "In the begginer, there was the designer", area: "1"});
 })
 
 

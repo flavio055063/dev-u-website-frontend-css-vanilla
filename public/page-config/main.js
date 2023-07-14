@@ -1,16 +1,6 @@
-const token = localStorage.getItem('token');
-
-if (token) {
-    // O token está presente no Local Storage
-    console.log('Token encontrado:', token);
-} else {
-    // O token não está presente no Local Storage
-    console.log('Nenhum token encontrado. Redirecionando ao login page');
-    window.location.href="http://localhost:3000/login";
-}
-
 const rankBorder = document.getElementById("rank-border");
 const grid = document.getElementById("grid");
+const token = '123';
 
 const nickElement = document.getElementById("nickname");
 const nameElement = document.getElementById("name");
@@ -24,7 +14,7 @@ const url = 'http://localhost:3000/main/getData';
 var isYellow = false;
 
 var loop = setInterval(lightBorder, 2000);
-getUserData(token);
+//getUserData(token);
 
 function lightBorder(){
     if(isYellow == true){

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Membro</title>
+    <link rel="stylesheet" href="../../public/page-config/style.css">
+    <link rel="stylesheet" href="../../public/page-config/buttons.css">
+</head>
+<body>
+    
+    <div id="grid">
+        <div id="profile-frame">
+            <div id="profile-grid">
+                <div class="align-center">
+                    <div class="align-center" id="profile-pic-wrapper">
+                        <img src="../../public/images/foto de perfil.jpg" alt="foto de perfil" id="profile-pic">
+                        <img src="../../public/rank frames/rank8.png" alt="borda de rank" id="rank-border">
+                        <label for="file-input" id="label-upload" class="align-center">
+                            <img class="upload-icon" src="../../public/images/upload.png" alt="icone de upload" id="icon-pic">
+                        </label>
+                        <input id="file-input" type="file" />
+                    </div>
+                    <input type="text" placeholder="Nick" required id="nickname">
+                    <p id="area">Game designer</p>
+                </div>
+                <div id="info" class="align-center">
+                    <input type="text" placeholder="Nome" required id="name">
+                    <input type="url" placeholder="itch.io" id="itchio">
+                    <input type="text" placeholder="discord" id="discord">
+                    <input type="text" placeholder="BIO" id="bio">
+                </div>
+                <div class="align-center">
+                    <button id="btn-config">
+                        <img src="../../public/images/done.png" alt="engrenagem de configurações" width="15%">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../public/page-config/main.js"></script>
+</body>
+</html>
